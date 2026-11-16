@@ -21,9 +21,9 @@ Image classification is a fundamental task in computer vision where an input ima
 
 ## PROGRAM
 
-### Name: HEMNATH R
+### Name: Sanjai.R
 
-### Register Number: 212224240057
+### Register Number: 212223040180
 
 ```python
 import torch
@@ -96,8 +96,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name: HEMNATH R')
-print('Register Number: 212224240057')
+print('Name: Sanjai R')
+print('Register Number: 212223040180')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -117,8 +117,8 @@ def train_model(model, train_loader, num_epochs=3):
             optimizer.step()
             running_loss += loss.item()
 
-        print('Name: HEMNATH R')
-        print('Register Number: 212224240057')
+        print('Name: Sanjai R')
+        print('Register Number: 212223040180')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 
@@ -143,15 +143,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: Sanjai R')
+    print('Register Number: 212223040180')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: Sanjai R')
+    print('Register Number: 212223040180')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -159,8 +159,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: Sanjai R')
+    print('Register Number: 212223040180')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
@@ -179,8 +179,8 @@ def predict_image(model, image_index, dataset):
     class_names = dataset.classes
 
     # Display the image
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: Sanjai R')
+    print('Register Number: 212223040180')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
